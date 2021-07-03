@@ -1,0 +1,20 @@
+/* profile.css */
+
+main.profile header{display:flex;flex-direction:column;justify-content:flex-end;
+position:relative;top:-60px;height:65vh;width:100%;
+background:url(../images/bg_default.png) no-repeat 0 0;background-size:cover;}
+
+main.profile header>div{position:relative;bottom:-60px;text-align:center;}
+main.profile header>div img{width:100px;border-radius:50%;margin-bottom:10px;}
+
+main.profile .profile_section{display:flex;flex-direction:column;align-items:center;}
+main.profile .profile_section div:nth-of-type(1){margin:20px 0;}
+main.profile .profile_section div:nth-of-type(1) input{padding:6px;text-indent:2px;border:1px solid #999;border-radius:5px;}
+main.profile .profile_section div:nth-of-type(1) input::placeholder{color:#999;}
+
+main.profile .profile_section div:nth-of-type(2){display:flex;}
+main.profile .profile_section div:nth-of-type(2) p{width:80px;display:flex;flex-direction:column;align-items:center;}
+main.profile .profile_section div:nth-of-type(2) p i{width:50px;height:50px;padding:15px;border-radius:50%;
+color:#523737;
+background-color:#f2f2f2;}
+main.profile .profile_section div:nth-of-type(2) p span{margin-top:5px;font-size:12px;}

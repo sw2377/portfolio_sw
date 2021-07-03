@@ -1,0 +1,10 @@
+/* search_bar.css */
+
+.search_bar{position:relative;padding:20px 25px;margin-top:25px;}
+.search_bar input{width:100%;padding:10px 7px;
+border:1px solid transparent;background-color:#f1f2f3;border-radius:5px;
+text-align:center;font-size:13px;}
+.search_bar>i{position:absolute;top:30px;left:40px;color:#999;}
+.search_bar input[type="text"]::placeholder{color:#999;}
+
+.search_bar input:focus{outline:none;border:1px solid #fae100;}

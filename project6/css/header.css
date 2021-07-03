@@ -1,0 +1,23 @@
+/* header.css */
+
+.topHeader{z-index:2;position:fixed;top:0;width:100%;padding:10px 15px 15px;
+color:#fff;background-color:#523737;}
+
+/* 헤더가 투명일때 */
+.topHeader_transparent{background-color:transparent;}
+/* chat 헤더 */
+.topHeader_chat{background-color:#a1c0d6;}
+
+.topHeader i{padding-right:2px;color:#fff;}
+
+.topHeader .header_top{display:flex;justify-content:space-between;
+margin-bottom:20px;font-size:12px;}
+
+.topHeader .header_bottom{display:flex;justify-content:space-between;
+margin:0 15px;font-size:16px;}
+.topHeader .header_bottom .header_column:nth-of-type(1){cursor:pointer;color:rgba(255,255,255,0.5);}
+.topHeader .header_bottom .header_column:nth-of-type(3){cursor:pointer;}
+
+.topHeader .header_column{width:33.33%}
+.topHeader .header_column:nth-of-type(2){text-align:center;}
+.topHeader .header_column:nth-of-type(3){text-align:right;}

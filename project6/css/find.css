@@ -1,0 +1,12 @@
+/* find.css */
+
+main.find section.top_menu{position:relative;top:30px;height:80px;display:flex;justify-content:space-between;
+align-items:center;padding:0 30px;
+background-color:#eee;}
+main.find section.top_menu div{display:flex;flex-direction:column;align-items:center;justify-content:space-between;}
+main.find section.top_menu div i{color:#523737;padding-bottom:10px;}
+main.find section.top_menu div span{color:#523737;font-size:12px;}
+
+main.find section.content{position:absolute;top:180px;width:100%;padding:0 15px;color:#999;}
+main.find section.content h6{font-size:12px;}
+main.find section.content div{padding:20px 0;margin-top:5px;border-top:1px solid #ededed;border-bottom:1px solid #ededed;text-align:center;font-size:14px;}

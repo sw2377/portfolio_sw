@@ -1,0 +1,16 @@
+/* nav.css */
+
+nav.tabBar{position:fixed;bottom:0;width:100%;
+display:flex;justify-content:space-between;
+padding:15px 30px;
+border-top:1px solid #c1c1c1;
+background:#f7f7f7;}
+
+nav.tabBar a{display:flex;flex-direction:column;align-items:center;
+text-decoration:none;color:#c1c1c1;}
+nav.tabBar a>i{padding-bottom:3px;font-size:24px;
+transition:transform .3s linear;}
+nav.tabBar a>span{font-size:12px;}
+
+nav.tabBar a:hover i{transform:scale(1.1);}
+nav.tabBar .selected{color:#3b1e1e;}

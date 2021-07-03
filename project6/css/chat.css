@@ -1,0 +1,50 @@
+/* chat.css */
+
+/* header */
+header.topHeader_chat{border-bottom:1px solid rgba(0,0,0,0.1);}
+header.topHeader_chat{color:#222;font-weight:600;}
+header.topHeader_chat i{color:#222;}
+
+/* main */
+main.chat{height:90vh;padding:30px 15px 0;
+background-color:#a1c0d6;}
+main.chat .date{margin-bottom:10px;text-align:center;font-size:12px;color:rgba(0,0,0,0.5);}
+main.chat .chat_message{display:flex;justify-content:flex-end;
+text-align:right;}
+main.chat .chat_message .message{display:flex;flex-direction:column;}
+main.chat .chat_message>span{align-self:flex-end;margin-bottom:10px;margin-right:10px;
+font-size:12px;color:rgba(0,0,0,0.5);}
+main.chat .chat_message .message span{align-self:flex-end;margin-bottom:10px;padding:8px;border-radius:5px;
+background-color:#fae100;}
+
+main.chat .chat_message_to_me{display:flex;margin-top:20px;}
+main.chat .chat_message_to_me img{height:35px;width:35px;border-radius:50%;}
+main.chat .chat_message_to_me .message{display:flex;flex-direction:column;padding-left:15px;}
+main.chat .chat_message_to_me .message h4{font-size:12px;font-weight:600;margin-bottom:10px;}
+main.chat .chat_message_to_me .message span{align-self:flex-start;margin-bottom:10px;padding:8px;border-radius:5px;
+background-color:#fff;}
+main.chat .chat_message_to_me>span{margin-bottom:10px;align-self:flex-end;font-size:12px;color:rgba(0,0,0,0.5);}
+
+div.chatting{position:fixed;bottom:0;width:100%;height:60px;
+display:flex;justify-content:space-between;align-items:center;
+background-color:#eee;}
+div.chatting i.fa-plus{flex:1;padding-left:20px;color:#b4b4b4;font-size:24px;}
+div.chatting div{flex:9;text-align:right;padding-right:20px;}
+div.chatting input[type="text"]{width:80%;padding:15px 0;border:none;}
+
+div.chatting i.fa-smile-o{position:absolute;top:38%;right:80px;color:#b4b4b4;font-size:24px;}
+div.chatting i.fa-microphone{padding:15px;cursor:pointer;
+background-color:#fae100;color:#523737;}
+/* 
+ <!-- 채팅 입력창 -->
+    <div class="chatting">
+        <i class="fa fa-plus fa-lg"></i>
+        <div>
+            <input type="text">
+            <i class="fa fa-smile-o fa-lg"></i>
+            <span>
+                <i class="fa fa-microphone fa-lg"></i>
+            </span>
+        </div>
+    </div>
+*/
