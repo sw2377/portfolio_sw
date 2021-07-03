@@ -628,7 +628,7 @@ $(function(){
     // 팝업창 오픈
     $(".samsung_elect").click(function(e){
         e.preventDefault();
-        window.open("http://sowon2021y.dothome.co.kr/web1/","samsung electro-mechanics");
+        window.open("https://sw2377.github.io/portfolio_sw/project1/","samsung electro-mechanics");
     });
 
     $(".cjone").click(function(e){
