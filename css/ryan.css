@@ -1,0 +1,72 @@
+/* ryan.css */
+
+.ryan{position:relative;margin:0 auto;width:400px;height:380px;}
+
+.ryan .face{z-index:2;position:absolute;width:400px;height:380px;
+background:#e9a121;border:10px solid #000;border-radius:50%;
+box-sizing: border-box;}
+
+/* ears */
+.ryan .ears{z-index:1;position:absolute;left:calc(50% - 54px);top:-20px;}
+.ryan .ears:before, .ryan .ears:after{content:"";position:absolute;width:108px;height:108px;
+border:10px solid #000;border-radius:50%;
+background:#e9a121;box-sizing:border-box;}
+.ryan .ears:before{margin-left:-116px;}
+.ryan .ears:after{margin-left:116px;}
+
+/* eyebrows */
+.ryan .eyebrows{z-index:3;position:absolute;left:calc(50% - 39px);top:120px;}
+.ryan .eyebrows:before, .ryan .eyebrows:after{content:"";
+position:absolute;width:78px;height:14px;
+background:#000;border-radius:20px;box-sizing:border-box;}
+.ryan .eyebrows:before{margin-left:-80px;
+transform:translateY(0px);
+transition:all 0.3s ease-in-out;}
+.ryan .eyebrows:after{margin-left:80px;
+transform:rotate(0deg);
+transition:all 0.3s ease-in-out;}
+
+    /* ryan_hover */
+.ryan:hover .eyebrows:before{transform:translateY(-5px);}
+.ryan:hover .eyebrows:after{transform:rotate(-10deg);
+}
+
+/* eyes */
+.ryan .eyes{z-index:3;position:absolute;left:calc(50% - 13px);top:155px;}
+.ryan .eyes:before, .ryan .eyes:after{content:"";
+position:absolute;width:26px;height:26px;
+background:#000;border-radius:50%;box-sizing:border-box;}
+.ryan .eyes:before{margin-left:-75px;}
+.ryan .eyes:after{margin-left:75px;
+transform:translateY(0) scale(1, 1);
+transition:all 0.3s ease-in-out;}
+
+    /* ryan_hover */
+.ryan:hover .eyes:after{transform:translateY(-5px) scale(1.2, 0.2);}
+
+/* nose */
+.ryan .nose{z-index:3;position:absolute;left:calc(50% - 16px);top:195px;width:32px;height:32px;
+background:#000;border-radius:90% 90% 100% 100%;}
+
+/* mouth */
+.ryan .mouth{z-index:2;position:absolute;left:calc(50% - 35px);top:205px;}
+.ryan .mouth:before, .ryan .mouth:after{content:"";
+position:absolute;width:70px;height:64px;
+background:#fff;border:10px solid #000;border-radius:50%;box-sizing:border-box;}
+.ryan .mouth:before{margin-left:-24px;}
+.ryan .mouth:after{margin-left:24px;
+border-left-color:transparent;
+transform:rotate(14deg);}
+
+/* cheek */
+.ryan .cheek{opacity:0;z-index:3;position:absolute;left:calc(50% - 30px);top:195px;
+transition:all 0.5s ease-in-out;}
+.ryan .cheek:before, .ryan .cheek:after{content:"";
+position:absolute;width:60px;height:34px;
+background:rgba(251,98,92,0.7);
+border-radius:80% 80% 100% 100%;box-sizing:border-box;}
+.ryan .cheek:before{margin-left:-120px;}
+.ryan .cheek:after{margin-left:120px;} 
+
+    /* ryan_hover */
+.ryan:hover .cheek{opacity:1;}
