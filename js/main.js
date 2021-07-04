@@ -193,27 +193,6 @@ $(function(){
         menuWorks.removeClass("move3");
     });
 
-    
-
-    // content3 scroll bg (연보라색)
-    /*
-    $(window).scroll(function(){
-        var scroll= $(window).scrollTop(),
-            content3Section = $("#container>.content3>section"), 
-            content3OffsetTop = content3Section.eq(1).offset().top;
-            // console.log(scroll);
-            // console.log(content3OffsetTop);
-
-        if(scroll >= content3OffsetTop){
-            $(".content2").removeClass("on");
-            content3Section.eq(1).addClass("on");
-        }else{
-            $(".content2").addClass("on");
-            content3Section.eq(1).removeClass("on");
-        }
-    });
-    */
-
     // content3 skills counting up
 
     var executed = false;
@@ -251,6 +230,10 @@ $(function(){
     });
 
     // content3 mouse here
+    $(".skills").find(".mouse_here").click(function(e){
+        e.preventDefault();
+    });
+    
     $(".skills").find(".mouse_here").mouseover(function(){
         var counterData = $(".skills").find(".num");
 
@@ -290,17 +273,6 @@ $(function(){
         counterData.each(function(){
             var counter = $(this);
             var counterRate  = counter.attr("data-rate");
-            // console.log(counterRate);
-
-           
-
-                // $({percent:counterRate}).animate({percent:jsGoal},{
-                //     duration:1500,
-                //     progress:function(){
-                //         var now = this.percent;
-                //         counterRate.text(now);
-                //     }
-                // });
 
         });
 
@@ -460,22 +432,6 @@ $(function(){
         var sec5top = content4Sec5.offset().top;
         var sec6top = content4Sec6.offset().top;
         var scroll = $(this).scrollTop();
-
-        // console.log(sec2top);  
-        // console.log(sec1top); 
-        // console.log(scroll);  
-
-        
-        // if(scroll >= sec0top){
-        //     var height = content4Sec0.height();
-        //     console.log(height);
-        //     for(i=1;i<=height;i++){
-        //     //console.log(i);
-        //     content4Sec0.find("p").css({"transform":"translateX(" + (scroll - scroll)+i + "px)"})
-        //     }
-
-            
-        // }
         
 
         if(scroll >= sec0top - 100 && scroll < sec1top){
@@ -644,12 +600,12 @@ $(function(){
 
     $(".wellbeingbowl_landing").click(function(e){
         e.preventDefault();
-        window.open("http://sowon2021y.dothome.co.kr/app1/","well-being bowl");
+        window.open("https://sw2377.github.io/portfolio_sw/project3/","well-being bowl");
     });
 
     $(".Marriott_Bonvoy").click(function(e){
         e.preventDefault();
-        window.open("http://sowon2021y.dothome.co.kr/web3/","Marriott Bonvoy");
+        window.open("https://sw2377.github.io/portfolio_sw/project4/","Marriott Bonvoy");
     });
 
     $(".ryan_code").click(function(e){
@@ -692,7 +648,7 @@ $(function(){
 
     $(".kakaotalk").click(function(e){
         e.preventDefault();
-        window.open("http://sowon2021y.dothome.co.kr/kakao/","kakaotalk","width=450px,height=850px,left=200px,top=20px");
+        window.open("https://sw2377.github.io/portfolio_sw/project6/","kakaotalk","width=450px,height=850px,left=200px,top=20px");
     });
 
     //content5
